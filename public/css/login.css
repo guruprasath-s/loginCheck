@@ -1,0 +1,30 @@
+.parentCont {
+    width: 60%;
+    font-family: cursive;
+    font-size: 18px;
+    line-height: 1.4em;
+    margin: auto;
+}
+
+.username,
+.password {
+    float: left;
+    width: 100%;
+}
+
+label {
+    width: 50%;
+    float: left;
+}
+
+input {
+    float: left;
+    width: 50%;
+}
+
+.submitButton {
+    float: left;
+    width: 100%;
+    text-align: center;
+    border: 2px solid;
+}
