@@ -27,7 +27,7 @@ $(document).ready(function() {
                 }
             };
             var url = "https://" + window.location.host + '/api/login';
-            ajaxReq(url, "POST", successCbk, errorCbk, null, config);
+            ajaxReq(url, "POST", successCbk, errorCbk, null, config, null, null, "true");
         }
         else
         {
