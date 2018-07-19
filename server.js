@@ -40,14 +40,14 @@ connection.connect(function(err) {
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'indianguru57@gmail.com',
-    pass: ''
+    user: 'guruprasathtest123@gmail.com',
+    pass: 'oopsbug@321'
   }
 });
 
 sendEmail = function(results,email){
     var mailOptions = {
-      from: 'indianguru57@gmail.com',
+      from: 'guruprasathtest123@gmail.com',
       to: email,
       subject: 'Your account tried to hack by an Intruder',
       html: "<p>An intruder from IP address: <b>" + config.ip + "</b> tried to hack your account with the series of passwords :<b>" + results + "</b>. Please Change your password immediately if anyone of your passwords are being compramised</p>"
