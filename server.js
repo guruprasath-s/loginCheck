@@ -16,10 +16,11 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'testDB'
+    host: 'sql12.freesqldatabase.com',
+    user: 'sql12248317',
+    password: 'MANZhn1NKs',
+    database: 'sql12248317',
+    port: 3306
 });
 connection.connect(function(err) {
     if (!err) {
@@ -105,4 +106,7 @@ router.post('/login',loginacclimiter,login.login);
 
 app.use('/api', router);
 
-app.listen(9999, "localhost");
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
