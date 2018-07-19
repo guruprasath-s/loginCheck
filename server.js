@@ -94,7 +94,7 @@ var loginacclimiter = new RateLimit({
     }
 });
 
-app.use('/home', function(req, res){
+app.use('/', function(req, res){
 
 	res.sendFile(__dirname + '/login.html');
 
