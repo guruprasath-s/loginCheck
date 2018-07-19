@@ -7,10 +7,11 @@ var RateLimit = require('express-rate-limit');
 var app = express();
 
 var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'testDB'
+    host: 'sql12.freesqldatabase.com',
+    user: 'sql12248317',
+    password: 'MANZhn1NKs',
+    database: 'sql12248317',
+    port: 3306
 });
 connection.connect(function(err) {
     if (!err) {
