@@ -26,7 +26,7 @@ $(document).ready(function() {
                     $("#login-alert").addClass('alert-danger').text(data.responseText).show();
                 }
             };
-            var url = window.location.host + '/api/login';
+            var url = "https://" + window.location.host + '/api/login';
             ajaxReq(url, "POST", successCbk, errorCbk, null, config);
         }
         else
